@@ -22,7 +22,7 @@ Title of Dataset: **File Inventory for 'Data' Directory, SI676 Assignment 1**
 
 **Publicly accessible location of the data source:** https://github.com/morskyjezek/networked-services-labs/tree/main/data
 
-**Recommended citation for this dataset:** #enter here after generated in github
+**Recommended citation for this dataset:** *Mengarelli , S. data_directory-file-manifest.csv [Data set]*
 
 
 ### DATA & FILE OVERVIEW
