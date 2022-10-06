@@ -41,14 +41,16 @@ def get_checksum(filePath, checksum_type):
 ### Script ##########
 
 file_list = list()
-headers = ['filename', 'absolute_path', 'file_extension', 'size_bytes', 'modify_datetime', 'md5_checksum', 'sha256_checksum']
-
+headers = ['file_id','filename', 'absolute_path', 'file_extension', 'size_bytes', 'modify_datetime', 'md5_checksum', 'sha256_checksum']
+file_count = 0
 
 for folder_name, subfolders, filenames in os.walk(datapath):
     for file in filenames:
         file_path = os.path.join(os.path.abspath(folder_name), file)
         if os.path.isfile(file_path):
-           file_info = {
+            file_count += 1
+            file_info = {
+            'file_id' : file_count,
             'filename' : os.path.basename(file),
             'absolute_path' : os.path.abspath(os.path.join(folder_name, file)),
             'file_extension' : os.path.splitext(file)[1],
